@@ -17,16 +17,7 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v3
       with:
-        PUSH_TYPES: 'pushplus'
-        PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         node-version: 14
-{
-    "token":"{PUSHPLUS_TOKEN},
-    "title":"标题",
-    "content":"消息内容",
-    "topic":"test"
-}
-
 
     - name: init
       run: npm install
