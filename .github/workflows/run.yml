@@ -17,6 +17,8 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v3
       with:
+        PUSH_TYPES: 'pushplus'
+        PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         node-version: 14
 
     - name: init
